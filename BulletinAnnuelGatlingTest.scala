@@ -19,14 +19,14 @@ class BulletinAnnuelGatlingTest extends Simulation {
 
     val baseURL = Option(System.getProperty("baseURL")) getOrElse """http://127.0.0.1:8080"""
 
-    val httpConf = http
-        .baseURL(baseURL)
-        .inferHtmlResources()
-        .acceptHeader("*/*")
-        .acceptEncodingHeader("gzip, deflate")
-        .acceptLanguageHeader("fr,fr-fr;q=0.8,en-us;q=0.5,en;q=0.3")
-        .connectionHeader("keep-alive")
-        .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:33.0) Gecko/20100101 Firefox/33.0")
+    //val httpConf = http
+      //  .baseURL(baseURL)
+        //.inferHtmlResources()
+        //.acceptHeader("*/*")
+        //.acceptEncodingHeader("gzip, deflate")
+        //.acceptLanguageHeader("fr,fr-fr;q=0.8,en-us;q=0.5,en;q=0.3")
+        //.connectionHeader("keep-alive")
+        //.userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:33.0) Gecko/20100101 Firefox/33.0")
 
     val headers_http = Map(
         "Accept" -> """application/json"""
